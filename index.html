@@ -1,0 +1,45 @@
+<html>
+	<title style= font-family: 'Saira Stencil One', cursive; text-align: center;>
+        App for measuring distance
+	</title>
+    
+    
+    <head>
+	 <link rel="stylesheet" type="text/css" href="style.css">
+	 <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+	</head>
+   
+
+
+
+	<body>
+        <iframe id="video" width="720" height="480" src="https://www.youtube.com/embed/-8XTrjsy6vo?&autoplay=1&modestbranding=1" frameborder="0" allow="accelerometer; allow="autoplay"; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	</body>
+
+<style>
+body {
+text-align: center
+}
+</style>
+
+<script>
+var video = document.getElementById("video")
+video.height = 300;
+video.width = 700;
+setInterval(myMethod, 0);
+
+
+
+function myMethod( )
+{
+var randomizer = Math.floor(Math.random() * 2000)
+video.height = randomizer;
+var randomizer = Math.floor(Math.random() * 2000)
+video.width = randomizer;
+document.body.style.background = "#"+((1<<24)*Math.random()|0).toString(16)
+
+}
+</script>
+
+</html>
